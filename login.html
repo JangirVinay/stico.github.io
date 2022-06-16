@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function validate() {
+            var email = document.reg_form.email;
+            var password = document.reg_form.password;
+            if (email.value.length <= 0) {
+                alert("Email Id is required");
+                email.focus();
+                return false;
+            }
+            if (password.value.length <8) {
+                alert("password is required");
+                password.focus();
+                return false;
+            }
+            return false;
+        }
+
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icon">
+            <img src="cloud.png" alt="none"
+                width="80px">
+        </div>
+        <div>
+            <!-- <a href="signup.html"><button class="btn">Sign Up </button></a>
+            <a href="Login.html"><button class="btn">Login </button></a> -->
+            
+        </div>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="http://127.0.0.1:5501/pricing.html">Price</a></li>
+                <li> <a href="#">Feature</a></li>
+                <li> <a href="#">About Us</a></li>
+                
+            </ul>
+    </nav>
+    
+    <div class="loginbox">
+        <h3>Login</h3>
+        <form action="form.php" name="reg_form" onsubmit="return validate()" method="get">          
+            <input type="email" placeholder="Email address" name="email" id="c">
+            <input type="password" placeholder="Password" name="password" id="d">
+            <input type="submit" value="Submit" id="f">
+        </form>
+        <p class="p5">
+           Not have an account? <a class="para-3" href="signup.html">Sign Up here</a>
+        </p>
+    </div>
+</body>
+<!-- <script>
+    function seterror(id,error){
+        // element = document.getElementById(id);
+        // element.getElementsByClassName('loginbox')[0].innerHTML = error;
+    }
+
+    function validateForm(){
+        // var returnval = true;
+
+        var name = document.forms['myForm']['fname'].value;
+        console.log(name);
+        // if (name.length<5){
+        //     seterror("name","Length is too short");
+           returnval=false;
+        // }
+        // return returnval;
+    }
+</script> -->
+</html>

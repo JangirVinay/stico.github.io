@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function validate() {
+            var fname = document.reg_form.fname;
+            var lname = document.reg_form.lname;
+            var email = document.reg_form.email;
+            var password = document.reg_form.password;
+            var cpassword = document.reg_form.cpassword;
+            if (!isNaN(fname.value)) {
+                alert("name must be in characters");
+                fname.focus();
+                return false;
+            }
+            if (fname == "") {
+                alert("Name is required");
+                fname.focus();
+                return false;
+            }
+            if (fname.value.length <=2) {
+                alert("Length must be greater than 2 ");
+                fname.focus();
+                return false;
+            }
+            if (lname.value == "") {
+                alert("Name is required");
+                lname.focus();
+                return false;
+            }
+            if (!isNaN(lname.value)) {
+                alert("name must be in characters");
+                lname.focus();
+                return false;
+            }
+            if (lname.value.length <=2) {
+                alert("Length must be greater than 2 ");
+                lname.focus();
+                return false;
+            }
+            if (email.value.length <= 0) {
+                alert("Email Id is required");
+                email.focus();
+                return false;
+            }
+           
+            if (password.value == "") {
+                alert("Password is required");
+                password.focus();
+                return false;
+            }
+            if (password.value.length <8) {
+                alert("password length must be greatere than 7");
+                password.focus();
+                return false;
+            }
+            if(password.value!=cpassword.value){
+                alert("password are not matching");
+                password.focus();
+                cpassword.focus();
+                return false;
+            }
+            if (cpassword.value == "") {
+                alert("confirm the Password");
+                cpassword.focus();
+                return false;
+            }
+           
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="icon">
+            <img src="cloud.png" alt="none"
+                width="80px">
+        </div>
+       
+        <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="http://127.0.0.1:5501/pricing.html">Price</a></li>
+                <li> <a href="#">Feature</a></li>
+                <li> <a href="#">About Us</a></li>
+                
+            </ul>
+    </nav>
+
+    <div class="account">
+        <h2>Sign Up</h2>
+        <form action="form.php" name="reg_form" onsubmit="return validate()" method="get">
+            <input type="text" placeholder="First Name" name="fname" id="a" autocomplete="off">
+            <input type="text" placeholder="Last Name" name="lname" id="b" autocomplete="off">
+            <input type="email" placeholder="Email address" name="email" id="c" autocomplete="off">
+            <input type="text" placeholder="Password" name="password" id="d" autocomplete="off">
+            <input type="text" placeholder="Confirm Password" name="cpassword" id="e" autocomplete="off">
+            <input type="submit" name="submit" value="Submit" id="f" autocomplete="off">
+        </form>
+        <p class="p3">
+            By clicking the Sign Up button you agree to our <br>
+            <a href="Login.html">Terms</a> and <a href=""> Data Policy and Privacy</a>
+        </p>
+        <p class="p4">
+            Already have an account? <a class="para-2" href="login.html">Login</a>
+        </p>
+    </div>
+</body>
+
+</html>
