@@ -25,7 +25,7 @@
                 fname.focus();
                 return false;
             }
-            if (fname.value.length <=2) {
+            if (fname.value.length <= 2) {
                 alert("Length must be greater than 2 ");
                 fname.focus();
                 return false;
@@ -40,7 +40,7 @@
                 lname.focus();
                 return false;
             }
-            if (lname.value.length <=2) {
+            if (lname.value.length <= 2) {
                 alert("Length must be greater than 2 ");
                 lname.focus();
                 return false;
@@ -50,18 +50,18 @@
                 email.focus();
                 return false;
             }
-           
+
             if (password.value == "") {
                 alert("Password is required");
                 password.focus();
                 return false;
             }
-            if (password.value.length <8) {
+            if (password.value.length < 8) {
                 alert("password length must be greatere than 7");
                 password.focus();
                 return false;
             }
-            if(password.value!=cpassword.value){
+            if (password.value != cpassword.value) {
                 alert("password are not matching");
                 password.focus();
                 cpassword.focus();
@@ -72,7 +72,7 @@
                 cpassword.focus();
                 return false;
             }
-           
+
             return false;
         }
 
@@ -91,16 +91,17 @@
             <!-- <li class="btn1"> <button>Login</button> <a href="#"></a></li>
             <li class="btn2"> <button>Sign UP</button> <a href="#"></a></li> -->
         </ul>
-        <!-- <div class="rightnav v-class-resp">
-            <a href="login.html"><button class="btn2">Login </button></a>
-            <a href="signup.html"><button class="btn1">Sign Up </button></a>
-        </div> -->
+        <div class="rightnav v-class-resp">
+            <!-- <a href="login.html"><button class="btn2">Login </button></a>
+            <a href="signup.html"><button class="btn1">Sign Up </button></a> -->
+        </div>
         <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </nav>
+
 
     <div class="account">
         <h2>Sign Up</h2>
@@ -120,6 +121,7 @@
             Already have an account? <a class="para-2" href="login.html">Login</a>
         </p>
     </div>
+    <script src="resp.js"></script>
 </body>
 
 </html>

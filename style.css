@@ -1,32 +1,42 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    
+
 }
-body{
-    background-image: url("https://img.freepik.com/free-vector/copy-space-wavy-white-background-layers_23-2148845469.jpg?w=2000");
+
+.background {
+    background: rgb(255, 253, 253) url("jp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
 }
-.logo{
+
+.logo {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     width: 33%;
     border: 3px solid white;
     border-radius: 50px;
 }
 
-.navbar{
+.navbar {
+    /* cursor: pointer 
+    position: sticky;
+    top: 0; */
+    position: fixed;
+    width: 100%;
     display: flex;
-    background-color: rgb(198, 183, 162);
+    background-color: rgb(25, 24, 23);
     align-items: center;
     justify-content: center;
-
 }
 
-.nav-list{
+.nav-list {
     width: 70%;
     /* background-color: rgb(19, 23, 23); */
     display: flex;
@@ -34,27 +44,29 @@ body{
 
 }
 
-.nav-list li{
+.nav-list li {
     list-style: none;
     padding: 26px 30px;
 }
 
-.nav-list li a{
+.nav-list li a {
     font-size: 20px;
     text-decoration: none;
-    color: rgb(14, 13, 13);
-}
-.nav-list li a:hover{
-    color: rgb(252, 245, 245);
+    color: rgb(244, 236, 236);
 }
 
-.rightnav{
+.nav-list li a:hover {
+    color: rgb(109, 214, 205);
+}
+
+.rightnav {
     /* background-color: rgb(125, 132, 132); */
     width: 30%;
     text-align: right;
     padding: 25px 23px;
 }
-.btn1{
+
+.btn1 {
     /* margin-left: -4px; */
     width: 120px;
     font-size: large;
@@ -65,7 +77,8 @@ body{
     background-color: black;
     border: 3px solid white; */
 }
-.btn2{
+
+.btn2 {
     width: 120px;
     font-size: large;
     border-radius: 8px;
@@ -75,48 +88,77 @@ body{
     background-color: black;
     border: 3px solid white; */
 }
-.btn1:hover{
+
+.btn1:hover {
     color: black;
 }
-.btn2:hover{
+
+.btn2:hover {
     color: rgb(122, 215, 235);
 }
 
-.burger{
+.burger {
     display: none;
     position: absolute;
     cursor: pointer;
     right: 5%;
     top: 15px;
 }
-.line{
+
+.line {
     width: 33px;
     background-color: rgb(3, 3, 3);
     height: 4px;
     margin: 5px 3px;
 }
-@media only screen and (max-width: 850px){
-   .nav-list{
-    flex-direction: column;
-   } 
-   .navbar{
-    flex-direction: column;
-    transition: all 0.1s ease-out;
-    height: 420px;
-   }
-   .rightnav{
-    text-align: center;
-   }
-   .burger{
-    display: block;
-   }
-   .h-nav-resp{
+
+@media only screen and (max-width: 850px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.1s ease-out;
+        height: 420px;
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
         height: 72px;
-   }
-   .v-class-resp{
+    }
+
+    .v-class-resp {
         opacity: 0;
-   }
+    }
 }
+
+.firsthalf {
+    padding-top: 70px;
+}
+
+.secondscn {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 253, 253) url("in.jpg");
+}
+
+.scn-1 {
+    color: rgb(10, 9, 9);
+    font-size: large;
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: underline;
+
+}
+
 
 
 /* pricing.html  */
@@ -124,52 +166,253 @@ table {
     width: 100%;
     border-collapse: collapse;
     position: relative;
-    top: 40px;
+    top: 70px;
 }
-table th{
+
+table th {
     background-color: rgb(224, 237, 222);
     height: 30px;
     font-size: 20px;
 
 }
-table,th,td {
+
+table,
+th,
+td {
     border: 2px solid gray;
 }
-caption{
+
+caption {
     font-size: 30px;
+
+}
+
+.background1 {
+    background-image: url("pricing.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+}
+
+.background2 {
+    background-color: rgb(232, 228, 209);
+    height: 1000px;
+    font-size: 40px;
+    text-align: center;
     
+}
+.box{
+    display: flex;
+}
+.rect-box1 {
+    height: 800px;
+    width: 20%;
+    background-color:white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    
+}
+.rect-box2 {
+    height: 800px;
+    width: 20%;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.rect-box3 {
+    height: 800px;
+    width: 20%;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.rect-box4 {
+    height: 800px;
+    width: 20%;
+    background-color:white;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.box1text{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(207, 226, 226);
+    border-radius: 20px; ;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.box2text{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(207, 226, 226);
+    border-radius: 20px; ;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.box3text{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(207, 226, 226);
+    border-radius: 20px; ;
+    font-size: large;
+    color: rgb(0, 0, 0);;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.box4text{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(207, 226, 226);
+    border-radius: 20px; ;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.box1p1{
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(111, 112, 112); 
+}
+.box1p2{
+    padding-top: 30px;
+    font-size: 30px;
+    color: green;
+}
+.box1p3{
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(9, 9, 9);
+}
+.box2p1{
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(111, 112, 112); 
+}
+.box2p2{
+    padding-top: 30px;
+    font-size: 30px;
+    color: green;
+}
+.box2p3{
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(9, 9, 9);
+}
+.box3p1{
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(111, 112, 112); 
+}
+.box3p2{
+    padding-top: 30px;
+    font-size: 30px;
+    color: green;
+}
+.box3p3{
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(9, 9, 9);
+}
+.box4p1{
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(111, 112, 112); 
+}
+.box4p2{
+    padding-top: 30px;
+    font-size: 30px;
+    color: green;
+}
+.box4p3{
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(9, 9, 9);
+}
+.startbtn{
+    background-color: rgba(223, 79, 39, 0.936);
+    height: 40px;
+    width: 150px;
+    margin-top: 50px;
+}
+.pfirsthalf {
+    font-size: 30px;
+    height: 200px;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    color: aliceblue;
+    /* position: relative;
+    left: 500px; */
+    /* align-items: center; */
+    /* justify-content: center;  */
 }
 
 /* sign-up*/
-.account{
+.account {
     position: relative;
-    top: 40px;
+    top: 120px;
     width: 360px;
     height: 500px;
     margin: auto;
     background-color: rgb(226, 228, 238);
     border-radius: 4px;
 }
-h2{
-    position:relative ;
-    left: 120px;   
+
+h2 {
+    position: relative;
+    left: 120px;
     font-size: 30px;
 }
-.p3{
+
+.p3 {
     position: relative;
     left: 20px;
     top: 30px;
 }
-.p4{
+
+.p4 {
     position: relative;
     left: 20px;
     top: 40px;
 }
-form{
-    padding: 0 20px; 
-    
+
+form {
+    padding: 0 20px;
+
 }
-#a,#b,#c,#d,#e{
+
+#a,
+#b,
+#c,
+#d,
+#e {
     position: relative;
     top: 1px;
     border-radius: 4px;
@@ -177,59 +420,123 @@ form{
     margin-top: 20px;
     width: 95%;
 }
-form input{
+
+form input {
     /* width: 80%; */
     padding: 7px;
     position: relative;
     top: -100px;
-    
+
     /* outline: none; */
 }
-#f{
+
+#f {
     position: relative;
     top: 16px;
     border-radius: 4px;
-    width:320px;
+    width: 320px;
     height: 35px;
     margin-top: 20px;
     background-color: rgb(199, 197, 211);
-    
+
 }
 
 
 /* login */
-.loginbox{
+.loginbox {
     position: relative;
-    top: 40px;
+    top: 120px;
     width: 360px;
     height: 280px;
     margin: auto;
     background-color: rgb(226, 228, 238);
     border-radius: 4px;
-    
+
 }
-#c,#d{
-    
+
+#c,
+#d {
+
     border-radius: 4px;
     display: flex;
     margin-top: 20px;
     width: 95%;
 }
-h3{
-    position:relative;
+
+h3 {
+    position: relative;
     text-align: center;
     /* left: 140px;    */
     font-size: 30px;
 }
-.p5{
+
+.p5 {
     position: relative;
     left: 20px;
     top: 40px;
 }
-.para-3{
-    text-decoration: none;
-}
-.para-2{
+
+.para-3 {
     text-decoration: none;
 }
 
+.para-2 {
+    text-decoration: none;
+}
+
+/* about.html */
+.abtbackground1{
+    height: 100vh;
+    background: url("images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.abtbox{
+    /* position: relative; */
+    width: 50%;
+    margin-top: 75px;
+    background: rgba(255, 255, 254, 0.74);
+    /* height: 100vh; */
+    display: table-column;
+}
+.abth{
+    font-size: 70px;
+    letter-spacing: 0.05em;
+    font-family: museo-w01-700,serif;
+    padding-left: 30px;
+    padding-top: 150px;
+    color: brown;
+}
+.abtp{
+    font-size: large;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 50px;
+    /* position: relative;
+    top: 30px;
+    left: 30px; */
+}
+.abtbackground2{
+    background-color: rgb(221, 197, 177);
+    height: 500px;
+    text-align: center;
+    font-size: 35px;
+    vertical-align: baseline;
+}
+.abtdetails{
+    display: flex;
+    /* padding-left: 500px; */
+    padding-top: 50px;
+    font-size: large;
+    justify-content: center;
+    padding: 30px 30px;
+}
+.nameclass{
+    
+}
+.emailclass{
+    /* padding-left: 60px; */
+}
