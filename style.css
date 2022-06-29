@@ -5,12 +5,64 @@
 }
 
 .background {
-    background: rgb(255, 253, 253) url("jp.jpg");
+    background: url("jp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
 }
-
+.firsthalf{
+    font-size: 50px;
+    /* height: 500px; */
+    padding-top: 110px;
+    padding-left: 50px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgb(231, 222, 211);
+    letter-spacing: 0.03cm;
+}
+.homeP{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 10px;
+    /* position: relative;
+    top: -400px; */
+}
+.hbtn{
+    /* padding-left: 50px;
+    padding-top: 50px; */
+    background-color: rgba(143, 111, 97, 0.504);
+    height: 40px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: rgb(236, 223, 219);
+    border-radius: 4px;
+}
+.box-main2{
+    height: 300px;
+    background-color: rgb(205, 189, 173);
+    display: flex;
+    justify-content: center;
+}
+.img1{
+    padding: 50px;
+    border-radius: 3px solid white;
+}
+.img2{
+    padding: 50px;
+    border-radius: 3px solid white;
+}
+.img3{
+    padding: 50px;
+    border-radius: 3px solid white;
+}
+.anchorh{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    
+}
 .logo {
     width: 20%;
     display: flex;
@@ -140,10 +192,6 @@
     }
 }
 
-.firsthalf {
-    padding-top: 70px;
-}
-
 .secondscn {
     margin: 0px;
     padding: 0px;
@@ -162,7 +210,7 @@
 
 
 /* pricing.html  */
-table {
+/* table {
     width: 100%;
     border-collapse: collapse;
     position: relative;
@@ -185,13 +233,12 @@ td {
 caption {
     font-size: 30px;
 
-}
+} */
 
 .background1 {
     background-image: url("pricing.jpg");
     background-repeat: no-repeat;
     background-blend-mode: darken;
-
 }
 
 .background2 {
@@ -367,11 +414,7 @@ caption {
     width: 100%;
     padding-top: 100px;
     text-align: center;
-    color: aliceblue;
-    /* position: relative;
-    left: 500px; */
-    /* align-items: center; */
-    /* justify-content: center;  */
+    color: aliceblue
 }
 
 /* sign-up*/
@@ -532,11 +575,25 @@ h3 {
     padding-top: 50px;
     font-size: large;
     justify-content: center;
-    padding: 30px 30px;
+    
+    
 }
 .nameclass{
+    padding-right: 30px;
     
 }
 .emailclass{
-    /* padding-left: 60px; */
+    padding-left: 30px;
+}
+.na{
+    padding-right: 40px;
+    padding-bottom: 7px;
+}
+.em{
+    padding-right: 40px;
+    padding-bottom: 7px;
+}
+.NA{
+    width: 250px;
+
 }
